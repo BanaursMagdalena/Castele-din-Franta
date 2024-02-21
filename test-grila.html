@@ -1,0 +1,281 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Castele din Franța | Test grilă</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link href ="css/all.css" type="text/css" rel = "stylesheet">
+	<link rel="icon" type="image/png" href="img/mini-logo.png">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script language="JavaScript">
+				var numQues = 10;
+				var numChoi = 3;
+				var answers = new Array(10);
+				var rezultat = new Array(2);
+				var response = new Array();
+				var final = 0;
+				answers[0] = "b) pe un pod care traversează râul Cher";
+				answers[1] = "a) Leagănul Libertății";
+				answers[2] = "c) renascentist";
+				answers[3] = "b) Caterina de Medici (1841) al lui Honoré de Balzac";
+				answers[4] = "a) prin măreția sa";
+				answers[5] = "a) Castelul d'Amboise";
+				answers[6] = "a) muzeu și obiectiv turistic";
+				answers[7] = "b) Trianonul de porțelan";
+				answers[8] = "c) Diderot și Marchizul de Sade";
+				answers[9] = "a) în traducere înseamnă 'între două ape'";
+
+				function getScore(form) {
+				  var score = 0;
+				  var currElt;
+				  var currSelection;
+				  for (i=0; i<numQues; i++) {
+					currElt = i*numChoi;
+					for (j=0; j<numChoi; j++) {
+					  currSelection = form.elements[currElt + j];
+					  if (currSelection.checked) {
+						if (currSelection.value == answers[i]) {
+						  score++;
+						  break;
+						}
+					  }
+					}
+				  }
+				  score = Math.round(score/numQues*100);
+				  form.percentage.value = score + "%";
+				  final=score;
+				  var correctAnswers = "";
+				  for (i=1; i<=numQues; i++) {
+					correctAnswers += i + ". " + answers[i-1] + "\r\n";
+				  }
+				  form.solutions.value = correctAnswers;
+				}
+		</script>
+</head>
+
+<body>
+    <div class="wrapper fix">
+        <div id="header-area" class="header-area section" style="position: fixed; z-index: 10; background-color: white; border-bottom: 3px solid #002654; background-color: #e6f1ff;">
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-logo col align-self-center"><a class="logo" href="index.html"><img src="img/logo.png" alt="Castele din Franța"> Castele din Franța</a></div>
+                        <div id="main-menu" class="main-menu col-auto d-none d-lg-block">
+                            <nav>
+                                <ul>
+									<li><a href="index.html">Prima pagină</a></li>
+									<li><a href="#">Castele din Franța</a>
+										<ul>
+											<li><a href="versailles.html">Château de Versailles</a></li>
+											<li><a href="chambord.html">Château de Chambord</a></li>
+											<li><a href="chenonceau.html">Château de Chenonceau</a></li>
+											<li><a href="amboise.html">Château d'Amboise</a></li>
+											<li><a href="vincennes.html">Château Vincennes</a></li>
+											
+										</ul>
+									</li>
+									<li><a href="test-grila.html">Test grilă</a></li>
+									<li><a href="galerie.html">Galerie foto</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+                            </nav>
+                        </div>
+                        <div class="mobile-menu col-12 d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+        <div id="causes-area" class="causes-area bg-dark section pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title white text-center col-12 mb-80" style="padding: 45px 0px 45px 0px; margin-bottom: 10px;">
+                        <h2>Test grilă</h2>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0 auto; width: 100%;">
+				
+				<form method="post" name="quiz">
+				    
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">1. Unde este construit Castelul Chenonceau?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q1" value="a) pe o stâncă a micului oraș Amboise"> a) pe o stâncă a micului orăș Amboise </li>
+								 <li><input type="radio" name="q1" value="b) pe un pod care traversează râul Cher"> b) pe un pod care traversează râul Cher </li>
+								 <li><input type="radio" name="q1" value="c) pe un șes din estul Parisului"> c) pe un șes din estul Parisului </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">2. Sub ce denumire mai este cunoscut Palatul Versailles?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q2" value="a) Leagănul Libertății"> a) Leagănul Libertății </li>
+								 <li><input type="radio" name="q2" value="b) Palatul Victoriei"> b) Palatul Victoriei </li>
+								 <li><input type="radio" name="q2" value="c) Simbolul egalității"> c) Simbolul Egalității </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">3. În ce stil arhitectural este construit Castelul de Chambord?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q3" value="a) modernist"> a) modernist </li>
+								 <li><input type="radio" name="q3" value="b) baroc"> b) baroc </li>
+								 <li><input type="radio" name="q3" value="c) renascentist"> c) renascentist </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">4. În prima parte a cărui roman Castelul Chenonceau este locul de desfășurare a acțiunii?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q4" value="a) Mizerabilii de Victor Hugo"> a) <i>Mizerabilii</i> de Victor Hugo  </li>
+								 <li><input type="radio" name="q4" value="b) Caterina de Medici (1841) al lui Honoré de Balzac"> b) <i>Caterina de Medici</i> de Honoré de Balzac </li>
+								 <li><input type="radio" name="q4" value="c) Ciuma de Albert Camus"> c) <i>Ciuma</i> de Albert Camus </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">5. Prin ce impresionează, în primul rând, Castelul Chambord?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q5" value="a) prin măreția sa"> a) prin măreția sa </li>
+								 <li><input type="radio" name="q5" value="b) prin poziționarea inedită, printre stânci"> b) prin poziționarea inedită, printre stânci </li>
+								 <li><input type="radio" name="q5" value="c) prin stilul arhitectural baroc"> c) prin stilul arhitectural baroc</li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">6. În ce castel s-a mutat Leonardo da Vinci în 1516, aducând cu el picturile preferate, printre care și Mona Lisa?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q6" value="a) Castelul d'Amboise"> a) Castelul d'Amboise </li>
+								 <li><input type="radio" name="q6" value="b) Castelul Chambord"> b) Castelul Chambord </li>
+								 <li><input type="radio" name="q6" value="c) Palatul Micul Trianon"> c) Palatul Micul Trianon </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+				
+					
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">7. Ce rol are astăzi Castelul Vincennes?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q7" value="a) muzeu și obiectiv turistic"> a) muzeu și obiectiv turistic </li>
+								 <li><input type="radio" name="q7" value="b) închisoare"> b) închisoare </li>
+								 <li><input type="radio" name="q7" value="c) primăria unui orășel de lângă Paris"> c) primăria unui orășel de lângă Paris </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">8. Sub ce denumire era cunoscut inițial Palatul Marele Trianon?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q8" value="a) Trianonul de marmură"> a) Trianonul de marmură </li>
+								 <li><input type="radio" name="q8" value="b) Trianonul de porțelan"> b) Trianonul de porțelan </li>
+								 <li><input type="radio" name="q8" value="c) Trianonul roz"> c) Trianonul roz </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">9. Ce personalități a găzduit Castelul Vincennes atunci când a fost transformat într-o închisoare?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q9" value="a) Leonardo da Vinzi și Jean-Jacques Rousseau"> a) Leonardo da Vinci și Jean-Jacques Rousseau </li>
+								 <li><input type="radio" name="q9" value="b) Napoleon Bonaparte și Victor Hugo"> b) Napoleon Bonaparte și Victor Hugo </li>
+								 <li><input type="radio" name="q9" value="c) Diderot și Marchizul de Sade"> c) Diderot și Marchizul de Sade </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					
+					<div class="col-lg-12 col-md-12 col-12 mb-30">
+                        <div class="single-causes-dark">
+                            <div class="wrap" style=" font-size: 20px;">
+                                <h4 style="color: white;">10. La ce se referă cuvântul <i>amboise</i> din denumirea Castelul Amboise?</h4>
+								<ul style="margin-top: 1pt; list-style: none; color: white;">
+								 <li><input type="radio" name="q10" value="a) în traducere înseamnă 'între două ape'"> a) în traducere înseamnă 'între două ape' </li>
+								 <li><input type="radio" name="q10" value="b) denumirea unui râu afluent al Loarei"> b) denumirea unui râu afluent al Loarei </li>
+								 <li><input type="radio" name="q10" value="c) denumire unui orășel de lângă Paris"> c) denumirea unui orășel de lângă Paris </li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div>
+						<input type="button" value="Rezultat" onClick="getScore(this.form)" style="display: block; margin: 0 auto;">
+						<br>
+						<input type="reset" value="Reluați întrebările" style="display: block; margin: 0 auto;"><Br>
+					</div>
+					
+					<p style="color: white; font-size: 20px; "> <strong>Scorul dumneavoastră la acest test: <input class="bgclr" type="text" size="5" name="percentage" style="background-color: #002654; border: 0; color: #fff;"></strong><br><br>
+
+					<p style="color: white;  font-size: 20px;"> <strong>Răspunsuri corecte:</strong></p>
+					<textarea class="bgclr" name="solutions" wrap="virtual" rows="11" cols="65" disabled style="color: #FFF; background-color: #002654; border:0px; font-weight:bold; display: block; margin: 0 auto;">
+					</textarea>
+
+				</form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-bottom-area" class="footer-bottom-area section">
+            <div class="container">
+                <div class="row justify-content-between" style="padding-bottom: 20px;">
+                    <div class="copyright col-md-auto col-12">
+                        <p style="color: white; font-size: 20px; padding-top: 20px;">Castele din Franța</p>
+                    </div>
+                    <div class="author-credit col-md-auto col-12">
+                        <p style="color: white; font-size: 20px; padding-top: 20px;">Test grilă</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/ajax-mail.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
